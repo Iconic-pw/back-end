@@ -35,7 +35,7 @@ app.get('/getCards/:category', getCardsByCategoryHandler);
 app.put('/updateCard/:id', updateCardHandler); //For Us , Locally
 app.put('/updateFavorite/:id', updateHandler);
 
-app.delete('/deleteCard/:id', deleteCardHandler); //For Us , Locally
+app.delete('/deleteCard/:id', deleteCardHandler); //For Us , Locallyrrr
 
 app.use(handleServerError);
 app.use(handleNotFoundError);
