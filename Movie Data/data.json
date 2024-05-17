@@ -1,0 +1,371 @@
+[
+    {
+        "id": 1000,
+        "name": "Hamza Alhalabi",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Software Developer",
+        "image": "https://media.licdn.com/dms/image/C4D03AQEJwAvP7dcQvg/profile-displayphoto-shrink_800_800/0/1647868879189?e=1721260800&v=beta&t=g_1HRWwZR0un5Y1BD58oH-HxBcwKTG-7D26arAU-6XQ",
+        "portfolio": "https://www.linkedin.com/in/hamza-alhalabi-5853a6235/"
+    },
+    {
+        "id": 1001,
+        "name": "Sura Al-ananbeh",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Graphic Designer",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/sura-al-ananbeh-4432221b8/"
+    },
+    {
+        "id": 1002,
+        "name": "Mira Yassin",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Digital Marketing Specialist",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/mira-yassin/"
+    },
+    {
+        "id": 1003,
+        "name": "Omran Alksour",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Web Developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQHwyKhZzNV__Q/profile-displayphoto-shrink_800_800/0/1714022214142?e=1721260800&v=beta&t=je2-PTNgCZhOwgMj8I8OFesdD78a2ykwmz0L-LZLclg",
+        "portfolio": "https://www.linkedin.com/in/omran-alksour/"
+    },
+    {
+        "id": 1004,
+        "name": "Amal Salah",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Art Director",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/amal-salah-121a66199/"
+    },
+    {
+        "id": 1005,
+        "name": "Mohammad AlManasrh",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Social Media Manager",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/mohammad-almanasrh-439300263/"
+    },
+    {
+        "id": 1006,
+        "name": "Fadi Al-Najar",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Full Stack Developer",
+        "image": "https://media.licdn.com/dms/image/C4E03AQFsvd-W8c-SeA/profile-displayphoto-shrink_800_800/0/1663419910822?e=1721260800&v=beta&t=OU5bf3ZuUWPJoUobzwt2k7gsYt3ylAUzCcyzVjAN-wc",
+        "portfolio": "https://www.linkedin.com/in/fadi-al-najar-15a9b6250/"
+    },
+    {
+        "id": 1007,
+        "name": "Layla Al-Mansour",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Creative Director",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/layla-almansour-1007"
+    },
+    {
+        "id": 1008,
+        "name": "Ahmad Alfraihat",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Content Marketing Manager",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/ahmad-alfraihat-1954b7215/"
+    },
+    {
+        "id": 1009,
+        "name": "Muath Mhawich",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Mobile App Developer",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/muath-mhawich-29166024b/"
+    },
+    {
+        "id": 1010,
+        "name": "Salma Abdulghani",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Illustrator",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/salma-abdulghani-190807129/"
+    },
+    {
+        "id": 1011,
+        "name": "Areej khresat",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "SEO Specialist",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/aya-alsabbagh-1011"
+    },
+    {
+        "id": 1012,
+        "name": "Ammar Almokbel",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Frontend Developer",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/ammar-almokbel-8b838b2a6/"
+    },
+    {
+        "id": 1013,
+        "name": "Rahaf Shayeb",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "UI/UX Designer",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/rahafalshayeb99/"
+    },
+    {
+        "id": 1014,
+        "name": "Jafar Allam",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "PPC Specialist",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/jafar-allam-02a1501b7/"
+    },
+    {
+        "id": 1015,
+        "name": "Saeed Al_kutaifani",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Game Developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQHMtvkN6URiow/profile-displayphoto-shrink_800_800/0/1713600318797?e=1721260800&v=beta&t=jeftThjtmW-orXlkmT_LM03bhy0LFt0RAmdYx6_jUc4",
+        "portfolio": "https://www.linkedin.com/in/saeed-al-kutaifani-4a4249262/"
+    },
+    {
+        "id": 1016,
+        "name": "Bashar Nazzal",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Motion Graphics Designer",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/bashar-nazzal-06b20a140/"
+    },
+    {
+        "id": 1017,
+        "name": "Marah A.Fardous",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Content Strategist",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/marah-a-fardous-9b4868203/"
+    },
+    {
+        "id": 1018,
+        "name": "Moustaffa Honine",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Backend Developer",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/moustaffa-honine-2918848b/"
+    },
+    {
+        "id": 1019,
+        "name": "Shefa' Alhendi ",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Illustrator",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/shefaa-alhendi/"
+    },
+    {
+        "id": 1020,
+        "name": "Rahaf Basel",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Social Media Manager",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/rahaf-basel-55a8a6242/"
+    },
+    {
+        "id": 1021,
+        "name": "Loai Hasan",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Software Engineer",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/loai-hasan/"
+    },
+    {
+        "id": 1022,
+        "name": "Yasmine Aladwan",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Graphic Designer",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/yasmine-aladwan-074609161/"
+    },
+    {
+        "id": 1023,
+        "name": "Ghada Arafa",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Content Marketing Manager",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/ghada-arafa-18028a1b1/"
+    },
+    {
+        "id": 1024,
+        "name": "Mohammad Frdoose",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Web Developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQGJ46jidg2NJQ/profile-displayphoto-shrink_800_800/0/1695682149858?e=1721260800&v=beta&t=0jq7BaIdML2kGGMimDds5O6XfELnLNLzruymPCzI9sQ",
+        "portfolio": "https://www.linkedin.com/in/mohammad-waleed-frdoose-031501215/"
+    },
+    {
+        "id": 1025,
+        "name": "Rand Saudi",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "UI/UX Designer",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/randsoudi7/"
+    },
+    {
+        "id": 1026,
+        "name": "Rama Nasr",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Digital Marketing Manager",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/rama-nasr-b049011a0/"
+    },
+    {
+        "id": 1027,
+        "name": "Mohammed Farwan",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Software Developer",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/mohammad-farwan/"
+    },
+    {
+        "id": 1028,
+        "name": "Noor Alsaidi",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Art Director",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/noor-alsaidi-702b13229/"
+    },
+    {
+        "id": 1029,
+        "name": "Duha Abu-Al-khair",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Social Media Strategist",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/duhaabual-khair/"
+    },
+    {
+        "id": 1030,
+        "name": "Yahhya Ayoub",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Game Developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQF0NKu5SLkWcA/profile-displayphoto-shrink_800_800/0/1698636511861?e=1721260800&v=beta&t=EhF-HYvibR9B06ubNMAUXJUDnjQ74uribGy6FmC0Z_w",
+        "portfolio": "https://www.linkedin.com/in/yahya-ayoub/"
+    },
+    {
+        "id": 1031,
+        "name": "Ahmad Al-Masri",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Creative Director",
+        "image": "https://i.pinimg.com/564x/4e/22/be/4e22beef6d94640c45a1b15f4a158b23.jpg",
+        "portfolio": "https://www.linkedin.com/in/ahmad-al-masri-672b3047/"
+    },
+    {
+        "id": 1032,
+        "name": "marrian abu-yousef",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Content Marketing Specialist",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/marrian-abu-yousef-463465202/"
+    },
+    {
+        "id": 1033,
+        "name": "Mhd Kabbani",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Backend Developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQH9nKb-p92sQQ/profile-displayphoto-shrink_800_800/0/1675760307266?e=1721260800&v=beta&t=L2jj5WGeg-eabe4I6Ke_d0HUSJcs7R2q7de9fjj7DFE",
+        "portfolio": "https://www.linkedin.com/in/ammar-kabbani/"
+    },
+    {
+        "id": 1034,
+        "name": "Marwa Miniaoui",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Illustrator",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/marwaminiaoui/"
+    },
+    {
+        "id": 1035,
+        "name": "Lara Mansour",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Social Media Manager",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/lara-mansourr/"
+    },
+    {
+        "id": 1036,
+        "name": "Ammar Yaser",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Software Engineer",
+        "image": "https://media.licdn.com/dms/image/D4D03AQF77u3CB5db8Q/profile-displayphoto-shrink_800_800/0/1690638298945?e=1721260800&v=beta&t=a3zDn-m1t-GwWBWZTrrnkX6YS11cPwxdbLXNMDWJAO8",
+        "portfolio": "https://www.linkedin.com/in/ammarya99/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+        "id": 1037,
+        "name": "Adyan Shamasneh",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "Graphic Designer",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/adyan-shamasneh-307822213/"
+    },
+    {
+        "id": 1038,
+        "name": "Luzan Obeidat",
+        "level": "mid-senior",
+        "category": "digital marketing",
+        "job_title": "Content Marketing Manager",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/luzan-obeidat-15670354/"
+    },
+    {
+        "id": 1039,
+        "name": "Baha'a Aljawabrah",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Web Developer",
+        "image": "https://media.licdn.com/dms/image/C4D03AQHKdSSO-am-yw/profile-displayphoto-shrink_800_800/0/1643732887177?e=1721260800&v=beta&t=2x1JQQtlCcv8-V0qVqdnISyz_NKJkXclw4CwHCrpV4o",
+        "portfolio": "https://www.linkedin.com/in/baha-a-aljawabrah-454a291bb/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+        "id": 1040,
+        "name": "Walaa Naimat",
+        "level": "senior",
+        "category": "visual arts",
+        "job_title": "UI/UX Designer",
+        "image": "https://i.pinimg.com/236x/9b/e7/bf/9be7bf0a773fe4dfcbcb27ce7dbcf7a3.jpg",
+        "portfolio": "https://www.linkedin.com/in/walaanaimat/"
+    }
+]
