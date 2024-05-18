@@ -99,7 +99,7 @@ This function waits for all the promises to either fulfill or reject.
       res.status(201).json(insertedCards);
     })
     .catch((error) => {
-      errorHandler500(error, req, res);
+      handleServerError(error, req, res);
     });
 }
 
@@ -133,7 +133,7 @@ function addNewCardHandler(req, res) {
   // res.send("data recived");
 }
 
-/*update the value of the isFav to true if the user clicked on add to favorites 
+/*update the value of the is_fav to true if the user clicked on add to favorites 
     and to false if the user clicked on delete from favorites.
 */
 function updateHandler(req, res) {
