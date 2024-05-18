@@ -51,16 +51,6 @@ class Card {
     this.portfolio = portfolio;
   }
 }
-class Card {
-  constructor(card_name, card_category, card_level, job_title, img, portfolio) {
-    this.card_name = card_name;
-    this.card_category = card_category;
-    this.card_level = card_level;
-    this.job_title = job_title;
-    this.img = img;
-    this.portfolio = portfolio;
-  }
-}
 
 function homeHandler(req, res) {
   res.send("WELCOME IN OUR ICONIC PROJECT");
