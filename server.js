@@ -28,9 +28,11 @@ app.get("/", homeHandler); //For Us , Locally
 
 app.post("/addLocallyData", addLocallyDataHandler); //For Us , Locally *
 app.post("/addNewCard", addNewCardHandler);
+app.post("/addAboutUsCard", addAboutUsCardHandler); // For Us , Locally *
 
 app.get("/getAllCards", getCardsHandler); //For Us , Locally
 app.get("/getCards/:category", getCardsByCategoryHandler); // *
+app.get("/getOurCards", getOurCardsHandler);
 
 app.put("/updateCard/:id", updateCardHandler); //For Us , Locally
 app.put("/updateFavorite/:id", updateHandler); //*
@@ -133,6 +135,23 @@ function addNewCardHandler(req, res) {
   // res.send("data recived");
 }
 
+function addAboutUsCardHandler(req, res) {
+  const { name, describtion, img, portfolio } = req.body; //destructuring ES6
+  const sql = `INSERT INTO about_us (my_name, describtion, img, portfolio)
+    VALUES ($1, $2, $3, $4) RETURNING *;`;
+  const values = [name, describtion, img, portfolio];
+  client
+    .query(sql, values)
+    .then((result) => {
+      console.log(result.rows);
+      res.status(201).json(result.rows);
+    })
+    .catch((error) => {
+      handleServerError(error, req, res);
+      console.log(error);
+    });
+}
+
 /*update the value of the is_fav to true if the user clicked on add to favorites 
     and to false if the user clicked on delete from favorites.
 */
@@ -149,6 +168,21 @@ function updateHandler(req, res) {
     .query(sql, values)
     .then((result) => {
       res.status(200).json(result.rows);
+    })
+    .catch((error) => {
+      handleServerError(error, req, res);
+      console.log(error);
+    });
+}
+//Our data in about us page.
+function getOurCardsHandler(req, res) {
+  const sql = `SELECT * FROM about_us;`;
+
+  client
+    .query(sql)
+    .then((result) => {
+      const data = result.rows;
+      res.json(data);
     })
     .catch((error) => {
       handleServerError(error, req, res);
