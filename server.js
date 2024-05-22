@@ -108,7 +108,7 @@ function addLocallyDataHandler(req, res) {
             card.job_title,
             card.img,
             card.portfolio,
-            true, // explicitly setting is_fav to TRUE
+            false, // explicitly setting is_fav to TRUE
         ];
 
         return client.query(sql, values);
