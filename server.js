@@ -3,6 +3,8 @@
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios").default;
+const multer = require("multer");
+const path = require("path");
 require("dotenv").config();
 
 const cardData = require("./Card_Data/data.json");
@@ -23,11 +25,36 @@ const app = express();
 app.use(cors());
 //for parsing body
 app.use(express.json());
+/*MULTER (UPLOAD IMAGE) */
+
+// Storage engine setup
+const storage = multer.diskStorage({
+  destination: "./upload/images",
+  filename: (req, file, cb) => {
+    const filename = `${file.fieldname}_${Date.now()}${path.extname(
+      file.originalname
+    )}`;
+    cb(null, filename);
+  },
+});
+
+const upload = multer({
+  storage: storage,
+  limits: {
+    fileSize: 10 * 1024 * 1024, // 10 MB limit
+  },
+});
+
+app.use("/profile", express.static("upload/images"));
+
+
+
+
 
 app.get("/", homeHandler); //For Us , Locally
-
+//as a back door
 app.post("/addLocallyData", addLocallyDataHandler); //For Us , Locally *
-app.post("/addNewCard", addNewCardHandler);
+app.post("/addNewCard", upload.single("profile"), addNewCardHandler);
 app.post("/addAboutUsCard", addAboutUsCardHandler); // For Us , Locally *
 
 app.get("/getAllCards", getCardsHandler); //For Us , Locally
@@ -106,6 +133,23 @@ This function waits for all the promises to either fulfill or reject.
 }
 
 function addNewCardHandler(req, res) {
+      
+      // // const sql = `INSERT INTO my_images (filename) VALUES ($1) RETURNING *`;
+      // // const values = [filename];
+
+      // client
+      //   .query(sql, values)
+      //   .then((result) => {
+      //     res.json({
+      //       success: 1,
+      //       profile_url: `http://localhost:4000/profile/${filename}`,
+      //       data: result.rows[0],
+      //     });
+      //   })
+      //   .catch((err) => {
+      //     console.error("Error executing query", err.stack);
+      //     res.status(500).json({ success: 0, message: "Database error" });
+      //   });
   console.log(req.body);
   //to collect the data:
   //const title= req.body.title;
@@ -114,6 +158,8 @@ function addNewCardHandler(req, res) {
 
   const { card_name, card_category, card_level, job_title, img, portfolio } =
     req.body; //destructuring ES6
+  const filename = img.filename;
+  const imgUrl = `${process.env.SERVER_URL}/profile/${filename}`;
   const sql = `INSERT INTO card (card_name, card_category, card_level, job_title, img, portfolio)
     VALUES ($1, $2, $3, $4, $5, $6) RETURNING *;`;
   const values = [
@@ -121,7 +167,7 @@ function addNewCardHandler(req, res) {
     card_category,
     card_level,
     job_title,
-    img,
+    imgUrl,
     portfolio,
   ];
   client
