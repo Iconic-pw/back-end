@@ -47,10 +47,6 @@ const upload = multer({
 
 app.use("/profile", express.static("upload/images"));
 
-
-
-
-
 app.get("/", homeHandler); //For Us , Locally
 //as a back door
 app.post("/addLocallyData", addLocallyDataHandler); //For Us , Locally *
@@ -133,32 +129,15 @@ This function waits for all the promises to either fulfill or reject.
 }
 
 function addNewCardHandler(req, res) {
-      
-      // // const sql = `INSERT INTO my_images (filename) VALUES ($1) RETURNING *`;
-      // // const values = [filename];
+  const {
+    card_name,
+    card_category,
+    card_level,
+    job_title,
+    portfolio,
+  } = req.body; //destructuring ES6
 
-      // client
-      //   .query(sql, values)
-      //   .then((result) => {
-      //     res.json({
-      //       success: 1,
-      //       profile_url: `http://localhost:4000/profile/${filename}`,
-      //       data: result.rows[0],
-      //     });
-      //   })
-      //   .catch((err) => {
-      //     console.error("Error executing query", err.stack);
-      //     res.status(500).json({ success: 0, message: "Database error" });
-      //   });
-  console.log(req.body);
-  //to collect the data:
-  //const title= req.body.title;
-  //const time= req.body.time;
-  //const image= req.body.image;
-
-  const { card_name, card_category, card_level, job_title, img, portfolio } =
-    req.body; //destructuring ES6
-  const filename = img.filename;
+  const filename = req.file.filename;
   const imgUrl = `${process.env.SERVER_URL}/profile/${filename}`;
   const sql = `INSERT INTO card (card_name, card_category, card_level, job_title, img, portfolio)
     VALUES ($1, $2, $3, $4, $5, $6) RETURNING *;`;
@@ -170,13 +149,17 @@ function addNewCardHandler(req, res) {
     imgUrl,
     portfolio,
   ];
+
   client
     .query(sql, values)
     .then((result) => {
       console.log(result.rows);
       res.status(201).json(result.rows);
     })
-    .catch();
+    .catch((error) => {
+      handleServerError(error, req, res);
+      console.log(error);
+    });
 
   // res.send("data recived");
 }
