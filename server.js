@@ -310,7 +310,7 @@ function handleServerError(error, req, res) {
   const err = {
     massage: error,
   };
-  res.send(err);
+  res.status(500).send(err);
 }
 
 function handleNotFoundError(error, req, res) {

@@ -6,7 +6,7 @@ CREATE TABLE card (
     job_title VARCHAR(255),
     img VARCHAR(255) ,
     portfolio VARCHAR(255),
-    is_fav BOOLEAN DEFAULT FALSE 
+    is_fav BOOLEAN DEFAULT TRUE 
 );
 
 
