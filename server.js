@@ -63,8 +63,25 @@ app.put("/updateFavorite/:id", updateHandler); //*
 app.delete("/deleteCard/:id", deleteCardHandler); //For Us , Locallyrrr //*
 app.delete("/deleteAllCards", deleteAllCardsHandler); //For Us , Locally *
 
+
+
+
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+
+app.post('/admin/login', (req, res) => {
+    const { password } = req.body;
+    if (password === ADMIN_PASSWORD) {
+        return res.status(200).json({ success: true });
+    } else {
+        return res.status(401).json({ success: false, message: 'Incorrect password' });
+    }
+});
+
+
 app.use(handleServerError);
 app.use(handleNotFoundError);
+
+
 
 class Card {
   constructor(card_name, card_category, card_level, job_title, img, portfolio) {
