@@ -51,7 +51,7 @@ app.get("/", homeHandler); //For Us , Locally
 //as a back door
 app.post("/addLocallyData", addLocallyDataHandler); //For Us , Locally *
 app.post("/addNewCard", upload.single("profile"), addNewCardHandler);
-app.post("/addAboutUsCard", addAboutUsCardHandler); // For Us , Locally *
+app.post("/addAboutUsCard", upload.single("profile") , addAboutUsCardHandler); // For Us , Locally *
 
 app.get("/getAllCards", getCardsHandler); //For Us , Locally
 app.get("/getCards/:category", getCardsByCategoryHandler); // *
@@ -168,7 +168,9 @@ function addAboutUsCardHandler(req, res) {
   const { name, describtion, img, portfolio } = req.body; //destructuring ES6
   const sql = `INSERT INTO about_us (my_name, describtion, img, portfolio)
     VALUES ($1, $2, $3, $4) RETURNING *;`;
-  const values = [name, describtion, img, portfolio];
+    const filename = req.file.filename;
+    const imgUrl = `${process.env.SERVER_URL}/profile/${filename}`;
+    const values = [name, describtion, imgUrl, portfolio];
   client
     .query(sql, values)
     .then((result) => {
@@ -306,10 +308,9 @@ function deleteAllCardsHandler(req, res) {
 }
 function handleServerError(error, req, res) {
   const err = {
-    status: 500,
     massage: error,
   };
-  res.status(500).send(err);
+  res.send(err);
 }
 
 function handleNotFoundError(error, req, res) {
