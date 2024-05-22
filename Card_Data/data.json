@@ -1,5 +1,50 @@
 [
     {
+        "id": 0,
+        "name": "Rawan Yaghmour",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Backend Developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQHPIi6a4EyCsg/profile-displayphoto-shrink_800_800/0/1706020468645?e=1721865600&v=beta&t=G6FXOGS_ghSngJ-MrORfCH_9d4ZRxJRAddCmvnWI3hA",
+        "portfolio": "https://www.linkedin.com/in/rawan-yaghmour/"
+    },
+    {
+        "id": 1,
+        "name": "Roua Smisem",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Web design",
+        "image": "https://media.licdn.com/dms/image/D4E03AQEyaFHpvB-ytA/profile-displayphoto-shrink_800_800/0/1716274264220?e=1721865600&v=beta&t=KFMgm5O_sJgoLvdrmRjk-3D1s0yNeAcA0oADtXe6pzY",
+        "portfolio": "https://www.linkedin.com/in/roua-smisem-6a3669242/"
+    },
+    {
+        "id": 2,
+        "name": "Zaid Rajab",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Flutter developer",
+        "image": "https://media.licdn.com/dms/image/D4E03AQHtQf3bDvYt9g/profile-displayphoto-shrink_800_800/0/1706363180246?e=1721865600&v=beta&t=aPFH7akFhLkIexD29lQZa6vq8d-MWu9L4P8IEon6lS0",
+        "portfolio": "https://www.linkedin.com/in/zaid-rajab/"
+    },
+    {
+        "id": 3,
+        "name": "Hassan Karraz",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Software Engineer",
+        "image": "https://media.licdn.com/dms/image/D5603AQFUWSQGgiN2bA/profile-displayphoto-shrink_800_800/0/1708975098919?e=1721865600&v=beta&t=zJFvvfms3PVYUXAa_S3804IHoElQMEciOorlNncEvko",
+        "portfolio": "https://www.linkedin.com/in/hassan-ayman/"
+    },
+    {
+        "id": 1039,
+        "name": "Hanan Khaled",
+        "level": "junior",
+        "category": "programming",
+        "job_title": "Web Developer",
+        "image": "https://media.licdn.com/dms/image/D5603AQEbNPUCNH58NA/profile-displayphoto-shrink_800_800/0/1694114982992?e=1721865600&v=beta&t=Aw0TpRQdvxyvhTZZILadW1gKCJJexMwNGUmF3ZdSHFk",
+        "portfolio": "https://www.linkedin.com/in/hanan-khaled-403344290/"
+    },
+    {
         "id": 1000,
         "name": "Hamza Alhalabi",
         "level": "junior",

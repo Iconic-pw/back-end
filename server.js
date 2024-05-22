@@ -84,48 +84,49 @@ function homeHandler(req, res) {
     Get data from data.json file 
 */
 function addLocallyDataHandler(req, res) {
-  const allCardsData = cardData.map((item) => {
-    return new Card(
-      item.name,
-      item.category,
-      item.level,
-      item.job_title,
-      item.image,
-      item.portfolio
-    );
-  });
-
-  /*
-  the response is sent only once, after all the insert operations have completed successfully. 
-  
-  */
-  const insertPromises = allCardsData.map((card) => {
-    let sql =
-      "INSERT INTO card (card_name, card_category, card_level, job_title, img, portfolio) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *;";
-    let values = [
-      card.card_name,
-      card.card_category,
-      card.card_level,
-      card.job_title,
-      card.img,
-      card.portfolio,
-    ];
-
-    return client.query(sql, values);
-  });
-  /*
-The Promise.all function is called with the insertPromises array. 
-This function waits for all the promises to either fulfill or reject.
-*/
-  Promise.all(insertPromises)
-    .then((results) => {
-      // The inserted cards are collected in an array and sent as the response using res.status(201).json(insertedCards).
-      const insertedCards = results.map((result) => result.rows[0]);
-      res.status(201).json(insertedCards);
-    })
-    .catch((error) => {
-      handleServerError(error, req, res);
+    const allCardsData = cardData.map((item) => {
+        return new Card(
+            item.name,
+            item.category,
+            item.level,
+            item.job_title,
+            item.image,
+            item.portfolio
+        );
     });
+
+    /*
+    The response is sent only once, after all the insert operations have completed successfully.
+    */
+    const insertPromises = allCardsData.map((card) => {
+        let sql =
+            "INSERT INTO card (card_name, card_category, card_level, job_title, img, portfolio, is_fav) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *;";
+        let values = [
+            card.card_name,
+            card.card_category,
+            card.card_level,
+            card.job_title,
+            card.img,
+            card.portfolio,
+            true, // explicitly setting is_fav to TRUE
+        ];
+
+        return client.query(sql, values);
+    });
+
+    /*
+    The Promise.all function is called with the insertPromises array. 
+    This function waits for all the promises to either fulfill or reject.
+    */
+    Promise.all(insertPromises)
+        .then((results) => {
+            // The inserted cards are collected in an array and sent as the response using res.status(201).json(insertedCards).
+            const insertedCards = results.map((result) => result.rows[0]);
+            res.status(201).json(insertedCards);
+        })
+        .catch((error) => {
+            handleServerError(error, req, res);
+        });
 }
 
 function addNewCardHandler(req, res) {
